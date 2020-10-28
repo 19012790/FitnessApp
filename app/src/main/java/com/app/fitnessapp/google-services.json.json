@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "752289422378",
+    "firebase_url": "https://auth-bb9a4.firebaseio.com",
+    "project_id": "auth-bb9a4",
+    "storage_bucket": "auth-bb9a4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:752289422378:android:e569aa026be8b540963753",
+        "android_client_info": {
+          "package_name": "com.GetHealthy.fitnessapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "752289422378-57hkgprlqsns2t309d6q171fgh0r55db.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.GetHealthy.fitnessapplication",
+            "certificate_hash": "e02c659d7d8e3d9b38ce92aa84f4fb62eb7475ec"
+          }
+        },
+        {
+          "client_id": "752289422378-4unfjj1s24qq0cikhgm4qof03fnppqet.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjVS1tAK8kha8aNruE1kbVYtEZxVod3BQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "752289422378-4unfjj1s24qq0cikhgm4qof03fnppqet.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
