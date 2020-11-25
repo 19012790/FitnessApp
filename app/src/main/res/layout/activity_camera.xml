@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/pic"
     tools:context=".Camera">
+
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="wrap_content"
@@ -13,17 +15,18 @@
         android:gravity="center" />
 
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:id="@+id/image_view"
-        tools:ignore="Suspicious0dp" />
-
     <Button
         android:id="@+id/bt_open"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="open camera" />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:ignore="Suspicious0dp" />
+
 </LinearLayout>

@@ -33,6 +33,7 @@ Button btOpen;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera);
 
+
         imageView=findViewById(R.id.image_view);
         btOpen=findViewById(R.id.bt_open);
 
@@ -52,7 +53,67 @@ Button btOpen;
                 startActivityForResult(intent,100);
             }
         });
+        spinner = findViewById(R.id.spinner); //spinner
+        List<String> categories = new ArrayList<>();
+        categories.add(0,"choose category");
+        categories.add("Home");
+        categories.add("Graph");
+        categories.add("targets");
+        categories.add("Log in page");
 
+        ArrayAdapter<String> dataAdapter;
+        dataAdapter = new ArrayAdapter(this,android.R.layout.simple_spinner_item,categories);
+        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(dataAdapter);
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long l) {
+
+
+                if(parent.getItemAtPosition(position).equals("choose catagory"))
+                {
+                    Intent intent = new Intent(Camera.this,Camera.class);
+                    startActivity(intent);
+                }
+                else
+                {
+
+                    if (parent.getItemAtPosition(position).equals("Home"))
+                    {
+                        Intent intent = new Intent(Camera.this,MainActivity2.class);
+                        startActivity(intent);
+                    }
+                    else{
+                        if (parent.getItemAtPosition(position).equals("Graph"))
+                        {
+                            Intent intent = new Intent(Camera.this,Graph.class);
+                            startActivity(intent);
+                        }
+                        else
+                        if (parent.getItemAtPosition(position).equals("targets"))
+                        {
+                            Intent intent = new Intent(Camera.this,TargetActivity.class);
+                            startActivity(intent);
+                        }
+                        else
+                        if (parent.getItemAtPosition(position).equals("Log in page"))
+                        {
+                            Intent intent = new Intent(Camera.this, MainActivity.class);
+                            startActivity(intent);
+                        }
+
+
+                    }
+
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                // TODO AUTO-generated method stub
+
+            }
+        });
     }
 
     @Override

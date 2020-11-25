@@ -5,22 +5,24 @@ public class UserInfo
 
     String weight;
     String height;
-    String targetWeight;
+
+
+    String caloricIntake;
+    String date;
+
 
     public UserInfo() {
     }
 
-    public String getTargetWeight() {
-        return targetWeight;
-    }
 
-    public void setTargetWeight(String targetWeight) {
-        this.targetWeight = targetWeight;
-    }
 
-    public UserInfo(String weight, String height) {
+    public UserInfo(String weight, String height,String caloricIntake,String date) {
         this.weight = weight;
         this.height = height;
+        this.caloricIntake = caloricIntake;
+        this.date = date;
+
+
     }
 
     public String getWeight() {
@@ -38,9 +40,26 @@ public class UserInfo
     public void setHeight(String height) {
         this.height = height;
     }
+
+
+    public String getCaloricIntake() {
+        return caloricIntake;
+    }
+
+    public void setCaloricIntake(String caloricIntake) {
+        this.caloricIntake = caloricIntake;
+    }
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
     public String ToString()
     {
-        return "weight" + weight + "/n" + "height" + height;
+        return "weight:" + weight + "\n" + "height:" + height +"\n" + "caloricIntake:"+ caloricIntake + "\n" + "date:" + date;
 
     }
 }

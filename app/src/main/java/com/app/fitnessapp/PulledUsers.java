@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -24,12 +25,15 @@ public class PulledUsers extends AppCompatActivity {
     ArrayAdapter adapter;
     ListView usersListView;
     UserInfo userInfo;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pulled_users);
         usersListView=findViewById(R.id.lv_users);
+        mAuth = FirebaseAuth.getInstance();
+        DatabaseReference myRef = database.getReference(mAuth.getCurrentUser().getUid());
 
         myRef.addValueEventListener(new ValueEventListener() {
             @Override

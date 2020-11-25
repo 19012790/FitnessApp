@@ -8,6 +8,13 @@
     android:background="@drawable/pic"
     tools:context=".MainActivity2">
 
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center" />
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,14 +30,6 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/myText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="kg's" />
-
-            <EditText
                 android:id="@+id/et_weight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -40,20 +39,30 @@
                 android:textSize="15dp" />
 
             <EditText
-                android:id="@+id/myText2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="cm" />
-
-            <EditText
                 android:id="@+id/et_height"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/mandali"
                 android:hint="Enter height"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/et_caloricIntake"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/mandali"
+                android:hint="Enter caloric Intake"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/et_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/mandali"
+                android:hint="dd/mm/yyyy"
                 android:textSize="15dp" />
 
             <LinearLayout
@@ -70,7 +79,7 @@
                     android:layout_marginTop="10dp"
                     android:backgroundTint="@android:color/black"
                     android:fontFamily="@font/mandali"
-                    android:text="submit"
+                    android:text="Save"
                     android:textColor="@color/white" />
 
                 <Button
@@ -80,7 +89,7 @@
                     android:layout_marginTop="10dp"
                     android:backgroundTint="@android:color/black"
                     android:fontFamily="@font/mandali"
-                    android:text="pull"
+                    android:text="Daily Log"
                     android:textColor="@color/white" />
 
 
@@ -91,40 +100,5 @@
 
     </androidx.cardview.widget.CardView>
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="wrap_content"
-        android:layout_height="70dp"
-        android:layout_marginTop="10dp"
-        android:gravity="center" />
-
-    <Button
-        android:id="@+id/bt_metric"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Metric Unit" />
-
-    <Button
-        android:id="@+id/bt_imperial"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Impierial Unit" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Enter you Target Goal" />
-
-    <EditText
-        android:id="@+id/et_weight2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/mandali"
-        android:hint="Enter target weight"
-        android:textSize="15dp" />
 
 </LinearLayout>

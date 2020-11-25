@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic"
+    android:orientation="vertical"
+    tools:context=".TargetActivity">
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/et_targetWeight"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="enter target weight"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/et_targetCalorie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="enter target Calorie"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/bt_submitTarget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="submit"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/bt_ViewData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Kilograms" />
+
+    <TextView
+        android:id="@+id/txt_weightPull"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Calories" />
+
+    <TextView
+        android:id="@+id/txt_pullCalorie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+</LinearLayout>
